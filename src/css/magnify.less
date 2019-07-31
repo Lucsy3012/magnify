@@ -1,0 +1,43 @@
+.magnify {
+  position: relative;
+  padding-top: 0;
+  z-index: 10000;
+
+  &.magnified { z-index: 10001; }
+
+  img {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 100vw;
+    height: auto;
+    transition: all .5s ease;
+    cursor: zoom-in;
+    z-index: 10500;
+
+    ~ .backdrop {
+      display: block;
+      background-color: fade(#fff, 90);
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 10100;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity .25s ease;
+    }
+  }
+
+  &.magnified {
+    img {
+      ~ .backdrop {
+        opacity: 1;
+        pointer-events: initial;
+      }
+    }
+  }
+}

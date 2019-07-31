@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Magnify jQuery Function</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Lucas Dietrich">
+    <meta name="audience" content="webdeveloper, developers, designers">
+    <meta name="robots" content="index,follow">
+    <meta name="description" content="Magnify jQuery Function" />
+
+    <!-- <meta property="og:site_name" content="animations.css"> -->
+    <!-- <meta property="og:title" content="Accessible animations – animations.css"> -->
+    <!-- <meta property="og:url" content="https://github.com/Lucsy3012/animations/"> -->
+    <!-- <meta property="og:image" content="http://lucasdietrich.de/animations/src-example/og-image.jpg"> -->
+    <!-- <link rel="shortcut icon" href="http://lucasdietrich.de/animations/src-example/favicon.ico"> -->
+
+    <!-- <link rel="stylesheet" href="http://lucasdietrich.de/animations/vendor/highlight.min.css"> -->
+    <link rel="stylesheet" href="src/css/example.css">
+    <link rel="stylesheet" href="src/css/keyframes.css">
+    <link rel="stylesheet" href="vendor/animations.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700|Roboto:300,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+<section>
+    <div class="inner text-center">
+        <h1 class="animate--js slideUpFade delay-xs duration-s">Magnify.js</h1>
+        <p>Zoom into an image.</p>
+    </div>
+</section>
+
+<section>
+    <div class="inner">
+        <div class="grid">
+            <div>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
+            </div>
+            <div>
+                <div class="magnify">
+                    <img src="https://images.pexels.com/photos/544980/pexels-photo-544980.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Example Photo" />
+                </div>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
+            </div>
+        </div>
+    </div>
+    <div class="inner">
+        <div class="grid three-columns">
+            <div>
+                <div class="magnify">
+                    <img src="https://images.pexels.com/photos/1544880/pexels-photo-1544880.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Example Photo" data-space-around="70" />
+                </div>
+            </div>
+            <div class="align">
+                <div class="h3">Change "space-around"</div>
+                <p class="xs">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
+            </div>
+        </div>
+    </div>
+    <div class="inner">
+        <div class="grid three-columns">
+            <div class="align">
+                <p class="xs">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.</p>
+            </div>
+            <div>
+                <div class="magnify">
+                    <img src="https://images.pexels.com/photos/2635611/pexels-photo-2635611.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Example Photo" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="vendor/jquery.min.js"></script>
+<script src="vendor/animate.min.js"></script>
+<script src="src/js/magnify.js"></script>
+
+</body>
+</html>
