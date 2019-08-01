@@ -12,21 +12,21 @@ $(document).ready(function () {
     $(window).on('resize', function() {
         adaptHeight();
 
-        $('.magnify.magnified').each(function() {
+        $('.magnify--js.magnified').each(function() {
             changePosition($(this), $(this).find('img'), 40);
         });
     });
 
     // Add backdrop to every magnifiable image
-    $body.find('.magnify').append('<div class="backdrop"></div>');
+    $body.find('.magnify--js').append('<div class="backdrop"></div>');
 
     // Reset with click on backdrop
-    $body.on('click', '.magnify .backdrop', function() {
+    $body.on('click', '.magnify--js .backdrop', function() {
         reset();
     });
 
     // Magnify
-    $body.on('click', '.magnify img', function(e) {
+    $body.on('click', '.magnify--js img', function(e) {
         magnify($(this));
     });
 
@@ -35,7 +35,7 @@ $(document).ready(function () {
     }
 
     function adaptHeight() {
-        $('.magnify').each(function() {
+        $('.magnify--js').each(function() {
             var $holder = $(this),
                 $img = $holder.find('img');
 
@@ -48,7 +48,7 @@ $(document).ready(function () {
     }
 
     function magnify($el) {
-        var $parent = $el.parents('.magnify'),
+        var $parent = $el.parents('.magnify--js'),
             spaceAround = parseFloat($el.attr('data-space-around')),
             _magnified = $parent.hasClass(activeClass);
 
@@ -108,12 +108,12 @@ $(document).ready(function () {
     }
 
     function reset() {
-        $('.magnify img').css({
+        $('.magnify--js img').css({
             'top': 0,
             'left': 0,
             'width': '100%'
         });
-        $('.magnify').removeClass(activeClass);
+        $('.magnify--js').removeClass(activeClass);
     }
 
 });

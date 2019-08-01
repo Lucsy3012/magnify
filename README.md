@@ -4,11 +4,11 @@ A small function that allows the user to magnify any image within a specfic hold
 ## How to use
 
     <!-- initiate an image to magnify -->
-    <div class="magnify">
+    <div class="magnify--js">
         <img src="#" />
     </div>
     
     <!-- you can change the space around in pixels (initial: 40) -->
-    <div class="magnify">
+    <div class="magnify--js">
         <img src="#" data-space-around="60" />
     </div>
